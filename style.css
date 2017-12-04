@@ -1,0 +1,217 @@
+body {
+    font-family: 'Montserrat',sans-serif ;
+    margin-top: 70px;
+}
+
+#myName {
+	font-family: 'Satisfy', cursive;
+	color:#000;
+}
+
+.connectbut  a {
+	color:#232323;
+}
+
+
+a:hover , a:focus {
+	text-decoration: none;
+	color:#dfaf37;
+}
+.center {
+    text-align: center;
+}
+
+.text-big {
+    font-size: 300%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img-medium {
+    height: 200px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #4a4a4a;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.comment {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.commenter {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#comment_form {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.navbar-inverse{
+    border-radius:0px;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #dfaf37;
+}
+.active a{
+    color: #dfaf37 !important;
+}
+
+.navbar-brand>img{
+       height:50px;
+       margin-top:-15px;
+}
+#smallLogo{
+       height:50px;
+}
+footer .connect{
+    font-family: 'Shrikhand', cursive;
+}
+
+
+
+#acontent{
+    border:1px solid black;
+    border-radius:20px;
+}
+
+#madi,.abt {
+    border-radius:20px;
+}
+
+
+.art{
+    font-size:30px;
+    padding:20px;
+    border:2px solid black;
+    margin-bottom:30px;
+    margin-top:20px;
+    margin-left:-40px;
+}
+
+.rdbtn , .vbtn{
+    background-color:#232323; /*Old Blue I used - #347ab7*/
+    color: #dfaf37;
+    padding:10px;
+    font-size:15px;
+    border: 2px solid #232323;
+    text-decoration:none;
+}
+
+.rdbtn:hover {
+    background-color: #dfaf37;
+    color: #232323;
+    border: 1px solid #232323;
+    text-decoration:none;
+}
+
+h3,h4,h5{
+    font-style:normal;
+    font-weight:bold;
+}
+
+#details{
+    font-style:italic;
+}
+
+.box{
+    border:2px solid #000;
+    padding:20px;
+    margin:20px;
+}
+
+
+.desc{
+    font-size:15px;
+    font-style:italic;
+}
+
+@media only screen and (min-width:361px) and (max-width:420px) {
+	
+}
+
+@media only screen and (max-width:360px) {
+	.img-medium {
+    		height: 180px;
+	}
+}
+
+
+
+/**********************************************************************************/
+/* Float Shadow */
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+/******************************************************************************/
